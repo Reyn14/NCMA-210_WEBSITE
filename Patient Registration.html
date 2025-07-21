@@ -1,0 +1,97 @@
+<HTML>
+<head>
+<TITLE>REYNALEEN, Welcome to PATIENT REGISTRATION</TITLE>
+</HEAD>
+<BODY>
+<BR><BR>
+  <meta charset="UTF-8">
+  <title>Patient Registration - NurseConnect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2em;
+      background-color: #f4faff;
+    }
+    <h1 {
+      color: #007acc;
+    }
+    form {
+      background-color: #fff;
+      padding: 1.5em;
+      border-radius: 8px;
+      max-width: 500px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    input, textarea {
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 0.75em 1.5em;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1em;
+      text-decoration: none;
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+  <MARQUEE BGCOLOR=PINK scrollamount=0 face=Arial><center><H2>PATIENT REGISTRATION</H2></MARQUEE></font></center>
+  <form>
+  <label for="name"><b>Patient No#:</label></b>
+    <input type="number" id="No#" name="No#" required>
+	<label for="name"><b>Patient ID:</label></b>
+    <input type="number" id="ID" name="ID" required>
+    <label for="name"><b>Patient Surname:</label></b>
+    <input type="text" id="Surname" name="Surname" required>
+	<label for="name"><b>Patient Firstname:</label></b>
+    <input type="text" id="First Name" name="First Name" required>
+	<label for="name"><b>Patient Middle Initial:</label></b>
+    <input type="text" id="Middle Initial" name="Middle Initial" required>
+	<label for="name"><b>Patient Age:</label></b>
+	<input type="number" id="age" name="age" required>
+	<label for="name"><b>Patient Sex:</label></b>
+	<form><input type="radio" name="gender" value="female"> female<required>
+	<form><input type="radio" name="gender" value="female">  male<required></form>
+	<br><br>
+<label for="diagnosis"><b>Medical Condition:</label></b>
+	<textarea id="Condition" name="Condition" rows="4" required></textarea>
+<br><br>
+<label for="name"><b>Contact Number:</label></b>
+	<input type="number" id="Contact Number" name="Contact Number" required>
+<br><br>
+<label for="name"><b>Patient Address:</label></b>
+	<input type="text" id="Address" name="Adress" required>
+<script>
+function addPatient(){ let table= document.getElementByID("Patient Records"); let row= table.insertRow(); row.innerHTML="<td>New patient no</td><td>new patient ID</td><td>new Surname</td><td>new First Name</td><td>new Middle Initial</td><td>new Age</td><td>new Sex</td><td>new Medical Condition</td><td>new Contact Number</td><td>new Address</td>"
+</script>
+<button onclick="Patient Records.HTML()">Add Patient<bgcolor=pink></button>
+<br><br>
+</body>
+</html>
+<a href="Lucero_WEBSITE.html">
+  <button style="padding: 10px 20px; background-color: pink; color: white; border: none; border-radius: 5px;">
+    Back To Homepage
+  </button>
+</a>
+<br><br>
+</body>
+</html>
+<a href="Patient Records.html">
+  <button style="padding: 10px 20px; background-color:pink; color: white; border: none; border-radius: 5px;">
+    Back To Patient Records
+  </button>
+</a>
